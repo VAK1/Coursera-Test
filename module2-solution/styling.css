@@ -8,6 +8,7 @@ h1 {
 	text-align: center;
 }
 article {
+	width: 40%;
 	display: block;
 	float: left;
 	padding: 10px;
