@@ -2,17 +2,38 @@
 <html>
 <head>
 	<meta charset = "utf-8">
-	<link rel = "stylesheet" href = "styling.css">
+	<link rel = "stylesheet" type = "text/css" href = "css/styling.css">
 	<title>Menu</title>
+	<style>
+		@media (min-width: 992px) {
+			.box-lg-1 {
+				width: 33.33%;
+			}
+		}
+		@media (min-width: 768px) and (max-width: 991px) {
+			 .box-md-1 {
+			 	width: 50%;
+			 }
+			 .box-md-2 {
+			 	width: 100%;
+			 }
+		}
+	</style>
 
 </head>
 <body>
 	<header><h1>Our Menu</h1></header>
-	<section class = "box-lg-1 box-md-1 box-sm-2">
-		<article> Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text </article></section>
-	<section class = "box-lg-1 box-md-1 box-sm-2">
-		<article> Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text </article></section>
-	<section class = "box-lg-1 box-md-2 box-sm-2">
-		<article> Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text </article></section>
+	<section class = "box-lg-1 box-md-1">
+		<article>
+			<div class = "label" id = "Chicken">Chicken</div>
+			<div> Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text </div></article></section>
+	<section class = "box-lg-1 box-md-1">
+		<article>
+			<div class = "label" id = "Beef">Beef</div>
+			<div> Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text </div></article></section>
+	<section class = "box-lg-1 box-md-2">
+		<article>
+			<div class = "label" id = "Sushi">Sushi</div>
+			<div> Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text Random Text </div></article></section>
 </body>
 </html>
