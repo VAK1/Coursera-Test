@@ -1,14 +1,28 @@
-// Practicing "new" and "this"
+// Event handling
+document.addEventListener("DOMContentLoaded",
+  function (event) {
+    
+    // Unobtrusive event binding
+    document.querySelector("button")
+      .addEventListener("click", function () {
+        
+        // Call server to get the name
+        $ajaxUtils
+          .sendGetRequest("data/name.json", 
+            function (res) {
+              var message = res.firstName + " " + res.lastName;
+              if (res.likesChineseFood) {
+              	message += " likes Chinese Food";
+              }
+              else {
+              	message += " does not like Chinese Food";
+              }
+              message += " and uses " + res.numberOfDisplays + " display(s) when he/she is coding";
+              document.querySelector("#content")
+                .innerHTML = "<h2>" + message + "!</h2>";
+            });
 
-function Family(titlee) {;
-	this.title = titlee;
-};
-
-Family.prototype.full_name = function() {
-	return ("This is a(n) " + this.title + " family!");
-};
-var myFamily1 = new Family("cool")
-var myFamily2 = new Family("awesome")
-console.log(myFamily1.title)
-console.log(myFamily2.title)
-console.log(myFamily2.full_name())
+        
+      });
+  }
+);
